@@ -36,8 +36,6 @@ var states2 = [
 
 ///As duas formas abaixo o que vai determinar MOFIFICAR ou INSERIR será a existência ou não da chave na coleção
 
-///#1 Forma de modificar, inserir ou remover no dictionary
-
 states1.count // verifica o tamanho do dictionary
 states1.isEmpty // verifica se esta vazio ou não
 
@@ -61,6 +59,8 @@ for key in states2.keys{
   print("➡️ Item encontrado: \(key)")
 }
 
+///#1 Forma de modificar, inserir ou remover no dictionary
+
 //MODIFICAR
 states1["SP"] = "Terra da Garoa"
 
@@ -81,8 +81,8 @@ states2.updateValue("Mogi das Cruzes", forKey: "SP")
 //INSERIR
 states2.updateValue("São José", forKey: "SC")
 
-//REMOVER retornar o valor que foi removido da coleção, senão não encontrar não retonar nada
-if let removeValue = states2.removeValue(forKey: "SsP"){
+//REMOVER retornar o valor que foi removido da coleção, senão encontrar não retonar nada
+if let removeValue = states2.removeValue(forKey: "SP"){
   print("🔥 O item \(removeValue) foi REMOVIDO!")
 }else {
   print("⚠️ O item não foi LOCALIZADO!")

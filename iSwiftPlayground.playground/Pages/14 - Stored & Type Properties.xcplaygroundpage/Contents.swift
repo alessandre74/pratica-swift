@@ -41,7 +41,7 @@ class Doctor3{
   }
 }
 
-// Não precizamos cria um init na struc pois ela cria atumomático por padrão
+// Não precizamos cria um init na struct pois ela cria atumomático por padrão
 struct Doctor4{
   var name: String = ""
   var age: Int = 0

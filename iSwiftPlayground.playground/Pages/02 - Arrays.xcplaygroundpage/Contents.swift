@@ -1,7 +1,5 @@
 //: [Previous](@previous)
 
-import Darwin
-
 var students = ["Alessandre", "Bruna", "Mike", "Silvana", "Silvia" ]
 
 students[0] = "Alessandre Livramento"
@@ -32,8 +30,6 @@ newArray.append(contentsOf: list) //Insere todos elemento do array list no newAr
 
 var newArray1: [String] = []
 newArray1.append(contentsOf: list[0...3]) //Insere os elementos da posição 0 até a 3 do array list no newArray1
-
-
 
 ///INVERTER POSIÇÕES
 list.swapAt(0, 1)
